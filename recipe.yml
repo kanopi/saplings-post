@@ -54,7 +54,6 @@ config:
     - field.storage.sa_seo_image
     - field.storage.sa_seo_page_title
     - field.storage.sa_type
-    - node.type.sa_post
     - taxonomy.vocabulary.sa_category
     - taxonomy.vocabulary.sa_post_type
   import:
