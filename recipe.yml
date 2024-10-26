@@ -16,13 +16,16 @@ install:
   - text
   # Contrib.
   - access_unpublished
+  - ds
   - entity_browser
   - entity_browser_entity_form
   - field_group
   - inline_entity_form
+  - media_library_edit
   - metatag
   - metatag_open_graph
   - metatag_twitter_cards
+  - nomarkup
   - pathauto
   - publication_date
   - quick_node_clone

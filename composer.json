@@ -13,10 +13,13 @@
     "require": {
         "drupal/access_unpublished": "*",
         "drupal/core": ">=10.4 || 11",
+        "drupal/ds": "*",
         "drupal/entity_browser": "*",
         "drupal/field_group": "*",
         "drupal/inline_entity_form": "^3.0.0@rc",
+        "drupal/media_library_edit": "*",
         "drupal/metatag": "*",
+        "drupal/nomarkup": "*",
         "drupal/pathauto": "*",
         "drupal/publication_date": "^2.0@beta",
         "drupal/quick_node_clone": "*",
