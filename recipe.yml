@@ -3,8 +3,6 @@ description: 'Saplings Post content type and dependencies.'
 type: 'Site'
 recipes:
   - core/recipes/content_editor_role
-  - saplings-fields-header
-  - saplings-fields-seo
 install:
   # Core.
   - link
