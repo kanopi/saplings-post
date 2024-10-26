@@ -24,6 +24,7 @@ install:
   - metatag_twitter_cards
   - pathauto
   - publication_date
+  - quick_node_clone
   - scheduler
   - schema_article
   - schema_metatag
@@ -72,18 +73,10 @@ config:
         id: content_editor
       grantPermissions:
         - 'access administration pages'
-        - 'access block library'
         - 'access content overview'
-        - 'access environment indicator'
-        - 'access environment indicator ribbon'
-        - 'access help pages'
         - 'access media overview'
-        - 'access patterns page'
-        - 'access shortcuts'
         - 'access site in maintenance mode'
-        - 'access sitemap'
         - 'access taxonomy overview'
-        - 'access toolbar'
         - 'access tour'
         - 'access_unpublished node sa_post'
         - 'administer menu'
@@ -102,7 +95,6 @@ config:
         - 'edit own sa_post content'
         - 'edit terms in sa_category'
         - 'edit terms in sa_post_type'
-        - 'ignore 404 requests'
         - 'renew token'
         - 'revert all revisions'
         - 'revert sa_post revisions'
@@ -110,16 +102,13 @@ config:
         - 'schedule publishing of nodes'
         - 'schedule publishing of taxonomy_term'
         - 'set sa_post published on date'
-        - 'switch shortcut sets'
         - 'update any media'
         - 'update media'
-        - 'use admin toolbar search'
         - 'use text format full_html'
         - 'view all media revisions'
         - 'view all revisions'
         - 'view any unpublished content'
         - 'view any unpublished sa_post content'
-        - 'view latest version'
         - 'view own unpublished content'
         - 'view own unpublished media'
         - 'view sa_post revisions'
@@ -127,4 +116,3 @@ config:
         - 'view scheduled media'
         - 'view scheduled taxonomy_term'
         - 'view the administration theme'
-        - 'view unpublished paragraphs'

@@ -19,6 +19,7 @@
         "drupal/metatag": "*",
         "drupal/pathauto": "*",
         "drupal/publication_date": "^2.0@beta",
+        "drupal/quick_node_clone": "*",
         "drupal/scheduler": "*",
         "drupal/schema_metatag": "*",
         "drupal/simple_sitemap": "*",
