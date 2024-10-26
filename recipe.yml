@@ -4,6 +4,7 @@ type: 'Site'
 recipes:
   - core/recipes/content_editor_role
   - core/recipes/full_html_format_editor
+  - saplings-media
 install:
   # Core.
   - link

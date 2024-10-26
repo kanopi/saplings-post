@@ -29,6 +29,7 @@
         "drupal/token_or": "*",
         "drupal/tour": "^2",
         "drupal/ui_patterns_layouts": "*",
-        "drupal/view_unpublished": "*"
+        "drupal/view_unpublished": "*",
+        "kanopi/saplings-media": "*"
     }
 }
