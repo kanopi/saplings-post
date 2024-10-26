@@ -65,7 +65,6 @@ config:
         id: anonymous
       grantPermissions:
         - 'access content'
-        - 'access sitemap'
         - 'access_unpublished node sa_post'
     # Set permissions for content editor role.
     user.role.content_editor:
