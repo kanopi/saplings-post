@@ -3,6 +3,7 @@ description: 'Saplings Post content type and dependencies.'
 type: 'Site'
 recipes:
   - core/recipes/content_editor_role
+  - core/recipes/full_html_format_editor
 install:
   # Core.
   - link
@@ -32,6 +33,7 @@ install:
   - token_or
   - tour
   - ui_patterns_layouts
+  - view_unpublished
 config:
   strict:
     - field.storage.sa_author
@@ -79,8 +81,6 @@ config:
         - 'access taxonomy overview'
         - 'access tour'
         - 'access_unpublished node sa_post'
-        - 'administer menu'
-        - 'administer redirects'
         - 'change own username'
         - 'clone sa_post content'
         - 'create media'
