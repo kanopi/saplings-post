@@ -5,3 +5,4 @@ name: Category
 vid: sa_category
 description: 'Provides a way to categorize your content by shared characteristics to topic.'
 weight: 0
+new_revision: false
