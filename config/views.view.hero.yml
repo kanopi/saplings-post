@@ -4,7 +4,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.hero
     - field.storage.node.sa_description
-    - field.storage.node.sa_featured_image
+    - field.storage.node.sa_featured_media
   module:
     - node
     - user
@@ -89,10 +89,10 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        sa_featured_image:
-          id: sa_featured_image
-          table: node__sa_featured_image
-          field: sa_featured_image
+        sa_featured_media:
+          id: sa_featured_media
+          table: node__sa_featured_media
+          field: sa_featured_media
           relationship: none
           group_type: group
           admin_label: ''
@@ -331,7 +331,7 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.sa_description'
-        - 'config:field.storage.node.sa_featured_image'
+        - 'config:field.storage.node.sa_featured_media'
   block_1:
     id: block_1
     display_title: Block
@@ -349,4 +349,4 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.sa_description'
-        - 'config:field.storage.node.sa_featured_image'
+        - 'config:field.storage.node.sa_featured_media'

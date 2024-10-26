@@ -38,7 +38,7 @@ tips:
     label: 'Choose Featured Image'
     weight: -98
     position: auto
-    selector: '#sa_featured_image-media-library-wrapper'
+    selector: '#sa_featured_media-media-library-wrapper'
     body: 'Use the media library to choose or upload a featured image.'
   choose-an-overlay-setting:
     id: choose-an-overlay-setting

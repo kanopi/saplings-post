@@ -8,7 +8,7 @@ dependencies:
     - field.field.node.sa_post.sa_category
     - field.field.node.sa_post.sa_description
     - field.field.node.sa_post.sa_external_source
-    - field.field.node.sa_post.sa_featured_image
+    - field.field.node.sa_post.sa_featured_media
     - field.field.node.sa_post.sa_header_position
     - field.field.node.sa_post.sa_overlay
     - field.field.node.sa_post.sa_related_posts
@@ -167,7 +167,7 @@ hidden:
   sa_author_url: true
   sa_category: true
   sa_description: true
-  sa_featured_image: true
+  sa_featured_media: true
   sa_header_position: true
   sa_overlay: true
   sa_robots: true
