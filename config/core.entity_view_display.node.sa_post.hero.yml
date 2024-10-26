@@ -1,0 +1,99 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.hero
+    - field.field.node.sa_post.sa_author
+    - field.field.node.sa_post.sa_author_url
+    - field.field.node.sa_post.sa_body
+    - field.field.node.sa_post.sa_category
+    - field.field.node.sa_post.sa_description
+    - field.field.node.sa_post.sa_external_source
+    - field.field.node.sa_post.sa_featured_image
+    - field.field.node.sa_post.sa_header_position
+    - field.field.node.sa_post.sa_overlay
+    - field.field.node.sa_post.sa_related_posts
+    - field.field.node.sa_post.sa_robots
+    - field.field.node.sa_post.sa_seo_description
+    - field.field.node.sa_post.sa_seo_media
+    - field.field.node.sa_post.sa_seo_page_title
+    - field.field.node.sa_post.sa_type
+    - node.type.sa_post
+  module:
+    - link
+    - nomarkup
+    - options
+    - user
+id: node.sa_post.hero
+targetEntityType: node
+bundle: sa_post
+mode: hero
+content:
+  sa_author:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  sa_author_url:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  sa_description:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  sa_featured_media:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings:
+      nomarkup:
+        enabled: false
+        separator: '|'
+        referenced_entity: '0'
+    weight: 0
+    region: content
+  sa_header_position:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  sa_overlay:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+hidden:
+  langcode: true
+  links: true
+  published_at: true
+  sa_body: true
+  sa_category: true
+  sa_external_source: true
+  sa_related_posts: true
+  sa_robots: true
+  sa_seo_description: true
+  sa_seo_image: true
+  sa_seo_page_title: true
+  sa_type: true
+  search_api_excerpt: true

@@ -1,0 +1,226 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: post_content_type_form
+label: 'Post Content Type Form'
+module: node
+routes:
+  -
+    route_name: node.add
+    route_params:
+      bundle: sa_post
+  -
+    route_name: entity.node.edit_form
+    route_params:
+      bundle: sa_post
+tips:
+  post-form-display:
+    id: post-form-display
+    plugin: text
+    label: 'Enter a Title'
+    weight: -100
+    position: auto
+    selector: '#edit-title-0-value'
+    body: 'Enter a title. This will be the title of the page/node.'
+  enter-a-description:
+    id: enter-a-description
+    plugin: text
+    label: 'Enter a Description'
+    weight: -99
+    position: auto
+    selector: '#edit-sa-description-0-value'
+    body: 'Enter a description. This will be used on teaser views, card views, and social meta tags.'
+  choose-featured-image:
+    id: choose-featured-image
+    plugin: text
+    label: 'Choose Featured Image'
+    weight: -98
+    position: auto
+    selector: '#sa_featured_image-media-library-wrapper'
+    body: 'Use the media library to choose or upload a featured image.'
+  choose-an-overlay-setting:
+    id: choose-an-overlay-setting
+    plugin: text
+    label: 'Choose an Overlay Setting'
+    weight: -97
+    position: auto
+    selector: '#edit-sa-overlay'
+    body: 'Overlay settings will create a transparent color overlay on the featured image. They will be light (white) or dark (black) with varying degrees of opacity to assist with text legibility.'
+  choose-header-position:
+    id: choose-header-position
+    plugin: text
+    label: 'Choose Header Position'
+    weight: -96
+    position: auto
+    selector: '#edit-sa-header-position'
+    body: 'Choose how to vertically position the header within the hero/featured image.'
+  tabs-navigation:
+    id: tabs-navigation
+    plugin: text
+    label: 'Tabs navigation'
+    weight: -95
+    position: auto
+    selector: .horizontal-tabs-list
+    body: 'Use these tabs to reveal more fields.'
+  add-components-button:
+    id: add-components-button
+    plugin: text
+    label: 'Add components button'
+    weight: -94
+    position: auto
+    selector: '.field-group-tabs-wrapper .horizontal-tab-button.horizontal-tab-button-1'
+    body: 'Inside the content tab, the add components button allows users to select components from the drop-down to use on the node. The selected component will appear and the user can populate the fields available. Components that get added can be edited, duplicated, and deleted.'
+  relationships:
+    id: relationships
+    plugin: text
+    label: Relationships
+    weight: -93
+    position: auto
+    selector: '.field-group-tabs-wrapper .horizontal-tab-button.horizontal-tab-button-2'
+    body: 'Inside the relationships tab, users can select taxonomies to categorize posts from the Type field dropdown and add new or existing posts to the Related posts field to indicate any related content.'
+  seo-page-title:
+    id: seo-page-title
+    plugin: text
+    label: 'SEO page title'
+    weight: -92
+    position: auto
+    selector: '.field-group-tabs-wrapper .horizontal-tab-button.horizontal-tab-button-3.last'
+    body: 'Inside the advanced SEO tab, users can enter text into the SEO page title to overwrite the default HTML page title for SEO. '
+  seo-description:
+    id: seo-description
+    plugin: text
+    label: 'SEO description'
+    weight: -91
+    position: auto
+    selector: '.field-group-tabs-wrapper .horizontal-tab-button.horizontal-tab-button-3.last'
+    body: 'Inside the Advanced SEO tab, users can enter text into the SEO description field to overwrite the default description for SEO meta descriptions. '
+  seo-image:
+    id: seo-image
+    plugin: text
+    label: 'SEO image'
+    weight: -90
+    position: auto
+    selector: '.field-group-tabs-wrapper .horizontal-tab-button.horizontal-tab-button-3.last'
+    body: 'Inside the Advanced SEO tab, uses can choose an image to overwrite the default image for SEO meta tags.'
+  robots-meta-tag:
+    id: robots-meta-tag
+    plugin: text
+    label: 'Robots meta tag'
+    weight: -89
+    position: auto
+    selector: '.field-group-tabs-wrapper .horizontal-tab-button.horizontal-tab-button-3.last'
+    body: "Inside the Advanced SEO tab, users can enter text into the robots meta tag field to customize the Robots meta tag if needed. If you enter nothing here, the default <code>index, follow</code> is assumed.\r\n\r\nThe robots meta tag lets you utilize a granular, page-specific approach to controlling how an individual page should be indexed and served to users in search results.\r\n\r\nVisit Google's Valid indexing and serving rules for a full list of options."
+  publish-state:
+    id: publish-state
+    plugin: text
+    label: 'Publish state'
+    weight: -88
+    position: auto
+    selector: '#edit-status-wrapper'
+    body: 'The Published radio button allows the user to publish or unpublish a node.'
+  the-preview-button:
+    id: the-preview-button
+    plugin: text
+    label: 'The preview button'
+    weight: -87
+    position: auto
+    selector: '#edit-preview--2--gin-edit-form'
+    body: 'The Preview button allows users to view the node with the current inputs/updates without saving the node.'
+  the-save-button:
+    id: the-save-button
+    plugin: text
+    label: 'The save button'
+    weight: -86
+    position: auto
+    selector: '#edit-submit--2--gin-edit-form'
+    body: 'The save button will save the node with the current inputs.'
+  toggle-sidebar:
+    id: toggle-sidebar
+    plugin: text
+    label: 'Toggle sidebar'
+    weight: -85
+    position: auto
+    selector: '.meta-sidebar__trigger[aria-controls="gin_sidebar"]'
+    body: 'The toggle sidebar button - next to the save button - will show or hide the sidebar on the right while editing the node.'
+  the-view-button:
+    id: the-view-button
+    plugin: text
+    label: 'The view button'
+    weight: -84
+    position: auto
+    selector: '#block-gin-primary-local-tasks .tabs li[data-original-order="0"]'
+    body: 'The view button allows users to view the actual node. Be sure to save your changes before using this button. '
+  the-revisions-button:
+    id: the-revisions-button
+    plugin: text
+    label: 'The revisions button'
+    weight: -83
+    position: auto
+    selector: '#block-gin-primary-local-tasks .tabs li[data-original-order="4"]'
+    body: 'The revisions button will take users to a list of all revisions made to this node. From this page, a user can choose to revert the node content to its previous state or delete revisions.'
+  the-clone-button:
+    id: the-clone-button
+    plugin: text
+    label: 'The clone button'
+    weight: -82
+    position: auto
+    selector: '#block-gin-primary-local-tasks .tabs li[data-original-order="5"]'
+    body: 'The clone button allows a user to create a new cloned node from the current node. Clicking this button will take the user to a new node edit page that contains all of the same content.'
+  publishing-options:
+    id: publishing-options
+    plugin: text
+    label: 'Publishing options'
+    weight: -81
+    position: auto
+    selector: '#edit-published-at-0-value'
+    body: 'The Published on field saves the date that was published on.'
+  the-revision-log-message:
+    id: the-revision-log-message
+    plugin: text
+    label: 'The revision log message'
+    weight: -80
+    position: auto
+    selector: '#edit-revision-log-wrapper'
+    body: 'The revision log message, admins can leave notes for other admins or your future self on what was changed in this revision.'
+  simple-xml-sitemap:
+    id: simple-xml-sitemap
+    plugin: text
+    label: 'Simple XML sitemap'
+    weight: -79
+    position: auto
+    selector: '#edit-simple-sitemap'
+    body: 'The simple XML sitemap accordion, when opened, reveals customizable sitemap options to the user. The user can choose whether or not to index the page in the sitemap, change the frequency in which the node changes (which can impact how it gets indexed), and include images referenced by this node to be included in the sitemap. Additionally, the user can choose to regenerate all sitemaps after saving the node.'
+  url-redirects:
+    id: url-redirects
+    plugin: text
+    label: 'URL redirects'
+    weight: -78
+    position: auto
+    selector: '#edit-url-redirects'
+    body: 'The URL redirect accordion opens to reveal a list of URL redirects and the ability to add new URL redirects. Clicking the Add URL redirect button will open a new window to the URL redirect configuration page.'
+  url-alias:
+    id: url-alias
+    plugin: text
+    label: 'URL alias'
+    weight: -77
+    position: auto
+    selector: '#edit-path-0'
+    body: 'The URL alias accordion opens to reveal the option to generate an automatic URL alias. Toggling automatic alias off will reveal the ability to input a custom URL alias to be used for this node.'
+  scheduling-options:
+    id: scheduling-options
+    plugin: text
+    label: 'Scheduling options'
+    weight: -76
+    position: auto
+    selector: '#edit-scheduler-settings'
+    body: 'If needed, you can schedule a date in the future when you want to publish this piece of content.'
+  authoring-information:
+    id: authoring-information
+    plugin: text
+    label: 'Authoring information'
+    weight: -75
+    position: auto
+    selector: '#edit-author'
+    body: 'The authoring information accordion opens to reveal options to edit the authored on date/time and who the node is authored by.'

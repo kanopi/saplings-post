@@ -1,0 +1,132 @@
+name: 'Saplings - Post'
+description: 'Saplings Post content type and dependencies.'
+type: 'Site'
+recipes:
+  - core/recipes/content_editor_role
+  - saplings-fields-header
+  - saplings-fields-seo
+install:
+  # Core.
+  - link
+  - media
+  - menu_ui
+  - node
+  - options
+  - taxonomy
+  - text
+  # Contrib.
+  - access_unpublished
+  - entity_browser
+  - entity_browser_entity_form
+  - field_group
+  - inline_entity_form
+  - metatag
+  - metatag_open_graph
+  - metatag_twitter_cards
+  - pathauto
+  - publication_date
+  - scheduler
+  - schema_article
+  - schema_metatag
+  - simple_sitemap
+  - token_or
+  - tour
+  - ui_patterns_layouts
+strict:
+  - field.storage.sa_author
+  - field.storage.sa_author_url
+  - field.storage.sa_body
+  - field.storage.sa_category
+  - field.storage.sa_description
+  - field.storage.sa_external_source
+  - field.storage.sa_featured_media
+  - field.storage.sa_header_position
+  - field.storage.sa_hide_header
+  - field.storage.sa_include_mute_button
+  - field.storage.sa_include_pause_button
+  - field.storage.sa_overlay
+  - field.storage.sa_related_posts
+  - field.storage.sa_robots
+  - field.storage.sa_seo_description
+  - field.storage.sa_seo_image
+  - field.storage.sa_seo_page_title
+  - field.storage.sa_type
+  - node.type.sa_post
+  - taxonomy.vocabulary.sa_category
+  - taxonomy.vocabulary.sa_post_type
+config:
+  import:
+    # Contrib.
+    scheduler:
+      - views.view.scheduler_scheduled_content
+  actions:
+    # Set permissions for anonymous role.
+    user.role.anonymous:
+      createIfNotExists:
+        id: anonymous
+      grantPermissions:
+        - 'access content'
+        - 'access sitemap'
+        - 'access_unpublished node sa_post'
+    # Set permissions for content editor role.
+    user.role.content_editor:
+      createIfNotExists:
+        id: content_editor
+      grantPermissions:
+        - 'access administration pages'
+        - 'access block library'
+        - 'access content overview'
+        - 'access environment indicator'
+        - 'access environment indicator ribbon'
+        - 'access help pages'
+        - 'access media overview'
+        - 'access patterns page'
+        - 'access shortcuts'
+        - 'access site in maintenance mode'
+        - 'access sitemap'
+        - 'access taxonomy overview'
+        - 'access toolbar'
+        - 'access tour'
+        - 'access_unpublished node sa_post'
+        - 'administer menu'
+        - 'administer redirects'
+        - 'change own username'
+        - 'clone sa_post content'
+        - 'create media'
+        - 'create sa_post content'
+        - 'create terms in sa_category'
+        - 'create terms in sa_post_type'
+        - 'create url aliases'
+        - 'delete media'
+        - 'delete own sa_post content'
+        - 'delete sa_post revisions'
+        - 'edit any sa_post content'
+        - 'edit own sa_post content'
+        - 'edit terms in sa_category'
+        - 'edit terms in sa_post_type'
+        - 'ignore 404 requests'
+        - 'renew token'
+        - 'revert all revisions'
+        - 'revert sa_post revisions'
+        - 'schedule publishing of media'
+        - 'schedule publishing of nodes'
+        - 'schedule publishing of taxonomy_term'
+        - 'set sa_post published on date'
+        - 'switch shortcut sets'
+        - 'update any media'
+        - 'update media'
+        - 'use admin toolbar search'
+        - 'use text format full_html'
+        - 'view all media revisions'
+        - 'view all revisions'
+        - 'view any unpublished content'
+        - 'view any unpublished sa_post content'
+        - 'view latest version'
+        - 'view own unpublished content'
+        - 'view own unpublished media'
+        - 'view sa_post revisions'
+        - 'view scheduled content'
+        - 'view scheduled media'
+        - 'view scheduled taxonomy_term'
+        - 'view the administration theme'
+        - 'view unpublished paragraphs'

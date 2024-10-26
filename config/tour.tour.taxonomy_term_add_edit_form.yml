@@ -1,0 +1,46 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term_add_edit_form
+label: 'Taxonomy term add/edit form'
+module: taxonomy
+routes:
+  -
+    route_name: entity.taxonomy_term.add_form
+  -
+    route_name: entity.taxonomy_term.edit_form
+tips:
+  taxonomy-tour:
+    id: taxonomy-tour
+    plugin: text
+    label: 'Taxonomy name'
+    weight: -100
+    position: auto
+    selector: '#edit-name-0-value'
+    body: 'Include a name for your new taxonomy term.'
+  taxonomy-description:
+    id: taxonomy-description
+    plugin: text
+    label: 'Taxonomy description'
+    weight: -100
+    position: auto
+    selector: '#edit-description-wrapper'
+    body: 'An optional field that allows the user to provide a short explanation of the taxonomy term.'
+  taxonomy-relations:
+    id: taxonomy-relations
+    plugin: text
+    label: 'Taxonomy relations'
+    weight: -100
+    position: auto
+    selector: '#edit-relations'
+    body: 'The relations tab allows users to nest terms by choosing a parent term - another term in the list. Users can also supply a weight number to sort terms.'
+  publish-state:
+    id: publish-state
+    plugin: text
+    label: 'Publish state'
+    weight: -100
+    position: auto
+    selector: '#edit-status-wrapper'
+    body: 'Allows the user to publish or unpublish this taxonomy term.'

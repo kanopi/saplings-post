@@ -1,0 +1,30 @@
+{
+    "name": "kanopi/saplings-post",
+    "description": "Creates a Search Engine Optimized Post/Blog system.",
+    "type": "drupal-recipe",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Jim Birch",
+            "homepage": "https://kanopi.com",
+            "role": "Maintainer"
+        }
+    ],
+    "require": {
+        "drupal/access_unpublished": "*",
+        "drupal/core": ">=10.4",
+        "drupal/entity_browser": "*",
+        "drupal/field_group": "*",
+        "drupal/inline_entity_form": "^3.0.0@rc",
+        "drupal/metatag": "*",
+        "drupal/pathauto": "*",
+        "drupal/publication_date": "^2.0@beta",
+        "drupal/scheduler": "*",
+        "drupal/schema_metatag": "*",
+        "drupal/simple_sitemap": "*",
+        "drupal/token_or": "*",
+        "drupal/tour": "^2",
+        "kanopi/saplings-content-base-header": "*",
+        "kanopi/saplings-content-base-seo": "*"
+    }
+}

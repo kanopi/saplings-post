@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.sa_overlay
+    - node.type.sa_page
+  module:
+    - options
+id: node.sa_page.sa_overlay
+field_name: sa_overlay
+entity_type: node
+bundle: sa_page
+label: Overlay
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
