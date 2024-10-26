@@ -30,29 +30,29 @@ install:
   - token_or
   - tour
   - ui_patterns_layouts
-strict:
-  - field.storage.sa_author
-  - field.storage.sa_author_url
-  - field.storage.sa_body
-  - field.storage.sa_category
-  - field.storage.sa_description
-  - field.storage.sa_external_source
-  - field.storage.sa_featured_media
-  - field.storage.sa_header_position
-  - field.storage.sa_hide_header
-  - field.storage.sa_include_mute_button
-  - field.storage.sa_include_pause_button
-  - field.storage.sa_overlay
-  - field.storage.sa_related_posts
-  - field.storage.sa_robots
-  - field.storage.sa_seo_description
-  - field.storage.sa_seo_image
-  - field.storage.sa_seo_page_title
-  - field.storage.sa_type
-  - node.type.sa_post
-  - taxonomy.vocabulary.sa_category
-  - taxonomy.vocabulary.sa_post_type
 config:
+  strict:
+    - field.storage.sa_author
+    - field.storage.sa_author_url
+    - field.storage.sa_body
+    - field.storage.sa_category
+    - field.storage.sa_description
+    - field.storage.sa_external_source
+    - field.storage.sa_featured_media
+    - field.storage.sa_header_position
+    - field.storage.sa_hide_header
+    - field.storage.sa_include_mute_button
+    - field.storage.sa_include_pause_button
+    - field.storage.sa_overlay
+    - field.storage.sa_related_posts
+    - field.storage.sa_robots
+    - field.storage.sa_seo_description
+    - field.storage.sa_seo_image
+    - field.storage.sa_seo_page_title
+    - field.storage.sa_type
+    - node.type.sa_post
+    - taxonomy.vocabulary.sa_category
+    - taxonomy.vocabulary.sa_post_type
   import:
     # Contrib.
     scheduler:
