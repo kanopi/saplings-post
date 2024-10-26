@@ -12,7 +12,7 @@
     ],
     "require": {
         "drupal/access_unpublished": "*",
-        "drupal/core": ">=10.4",
+        "drupal/core": ">=10.4 || 11",
         "drupal/entity_browser": "*",
         "drupal/field_group": "*",
         "drupal/inline_entity_form": "^3.0.0@rc",
