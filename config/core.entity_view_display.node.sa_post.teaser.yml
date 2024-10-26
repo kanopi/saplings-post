@@ -9,7 +9,7 @@ dependencies:
     - field.field.node.sa_post.sa_category
     - field.field.node.sa_post.sa_description
     - field.field.node.sa_post.sa_external_source
-    - field.field.node.sa_post.sa_featured_image
+    - field.field.node.sa_post.sa_featured_media
     - field.field.node.sa_post.sa_header_position
     - field.field.node.sa_post.sa_overlay
     - field.field.node.sa_post.sa_related_posts
@@ -45,7 +45,7 @@ third_party_settings:
             height_token: ''
     regions:
       image:
-        - sa_featured_image
+        - sa_featured_media
       header:
         - node_title
       content:
@@ -80,7 +80,7 @@ content:
     third_party_settings: {  }
     weight: 2
     region: content
-  sa_featured_image:
+  sa_featured_media:
     type: entity_reference_entity_view
     label: hidden
     settings:
